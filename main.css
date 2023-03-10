@@ -115,14 +115,14 @@ body {
 	text-align: justify;
 	text-justify: auto;
 	left: 25%;
-	margin: 25px;
+	/* margin: 25px; */
 }
 
 .text-div {
 	width: 20%;
 	align-self: flex-start;
-	margin-left: 7%;
-	margin-right: 10%;
+	margin-left: 8%;
+	margin-right: 1%;
 	padding-bottom: 50px;
 }
 
