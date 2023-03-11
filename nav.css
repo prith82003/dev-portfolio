@@ -10,6 +10,9 @@ header {
     transition: .4s;
     padding: 0.5em;
     z-index: 50;
+    top: 0px;
+    width: 100%;
+    left: 0px;
 }
 
 nav a {
@@ -22,14 +25,35 @@ nav a {
     margin-right: 5%;
 }
 
-nav a:hover {
-    border-bottom: 3px solid #ca3e26;
-}
-
 nav a.active {
     border-bottom: 3px solid #ffffff;
 }
 
 nav a:checked {
     border-bottom: white;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    background: #ca3e26;
+    transition: width .1s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width .1s;
 }
